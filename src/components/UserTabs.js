@@ -37,8 +37,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        selectedTab(tabId) {
-            dispatch( {type: TAB_SELECTED, payload: tabId} )
+        selectedTab(tabIndex) {
+            dispatch( {type: TAB_SELECTED, payload: tabIndex} )
         }
     }
 }

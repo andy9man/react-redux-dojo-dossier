@@ -3,9 +3,7 @@ import { connect } from 'react-redux';
 import AddItem from './AddItem.js';
 
 const TabList = props => {
-    console.log("Current Tab: " + props.currentTab);
-    console.log(props);
-    const tabItems = props.tabs[props.currentTab].items;
+    const tabItems = props.tabs.length > 0 ? props.tabs[props.currentTab].items : [];
     return (
         <div style={ {width: '100%'} } className="bg-off-white padding-vert-medium padding-horiz-medium">
             <ul className="disc" style={ {marginBottom: "35px"} }>

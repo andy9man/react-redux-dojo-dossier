@@ -12,7 +12,7 @@ class AddTab extends Component {
     }
 
     render() {
-        console.log(this.props.tabs);
+
         return (
             <div className="row">
                 <div style={ {float: 'right'} } className="medium-6 md-text-field with-floating-label columns">
@@ -23,14 +23,14 @@ class AddTab extends Component {
                             this.setState({ input: '' });
                         }}
                         >
-                        <div className="small-8 columns">
-                            <input id="addTabInput" type="text" onInput={(e) => this.setState( {input: e.target.value} )} required/>
-                            <label htmlFor="addTabInput" value={this.state.input}>Tab Title</label>
-                        </div>
+                            <div className="small-12 medium-8 columns">
+                                <input id="addTabInput" type="text" onInput={(e) => this.setState( {input: e.target.value} )} required/>
+                                <label htmlFor="addTabInput" value={this.state.input} required>Tab Title</label>
+                            </div>
 
-                        <div className="small-4 columns">
-                            <button className="expand">Add Tab</button>
-                        </div>
+                            <div className="small-12 medium-4 columns">
+                                <button className="expand">Add Tab</button>
+                            </div>
                         </form>
                     </div>
                 </div>

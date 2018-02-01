@@ -11,14 +11,14 @@ class Item {
 const initialState = {
     currentTab: undefined,
     newItem: '',
+    //tabs: []
     tabs: [
-        new Item('Bobby'),
-        new Item('Henry'),
-        new Item('Sofie'),
-        new Item('Miranda'),
-        new Item('Jerome'),
-        new Item('Millie'),
-        new Item('Train')
+        new Item('Rachel'),
+        new Item('Monica'),
+        new Item('Phoebe'),
+        new Item('Joey'),
+        new Item('Chandler'),
+        new Item('Ross')
     ]
 }
 

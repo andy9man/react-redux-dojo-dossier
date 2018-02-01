@@ -6,7 +6,7 @@ import './ui-toolkit/css/nm-cx/main.css';
 import store from './state/store.js';
 import AddTab from './components/AddTab.js';
 import UserTabs from './components/UserTabs.js';
-import TabList from './components/TabList';
+import TabList from './components/TabList.js';
 
 const Root = () => {
     return (
@@ -21,7 +21,6 @@ const Root = () => {
                         <AddTab />
                         <UserTabs />
                         <TabList />
-
                     </div>
                 </div>
             </Provider>
